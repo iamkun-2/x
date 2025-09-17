@@ -9,10 +9,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: utooland/setup-utoo@copilot/fix-fc58bf4b-44ab-4b95-bc26-995e14347557
         with:
-          version: 'latest'
-          registry: 'https://registry.npmmirror.com'
-          cacheUtoo: true
-          cacheStore: true
+          utoo-version: 'latest'
+          registry: 'https://registry.npmmirror.com/'
+          cache-store: true
       - run: ut
       - run: ut prestart
       - run: ut lint
