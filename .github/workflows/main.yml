@@ -7,9 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v2
-      - run: bun i
-      - run: npm i -g utoo
+      - uses: utooland/setup-utoo@copilot/fix-fc58bf4b-44ab-4b95-bc26-995e14347557
+        with:
+          registry: 'https://registry.npmmirror.com'
+      - run: ut
       - run: ut prestart
       - run: ut lint
       - run: ut tsc
