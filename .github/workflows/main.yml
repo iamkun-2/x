@@ -7,7 +7,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: utooland/setup-utoo@copilot/fix-fc58bf4b-44ab-4b95-bc26-995e14347557
+      - uses: utooland/setup-utoo@v1
         with:
           utoo-version: 'latest'
           registry: 'https://registry.npmmirror.com/'

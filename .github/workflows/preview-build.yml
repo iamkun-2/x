@@ -20,7 +20,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: utooland/setup-utoo
+      - uses: utooland/setup-utoo@v1
+        with:
+          utoo-version: 'latest'
+          registry: 'https://registry.npmmirror.com/'
+          cache-store: true
       - run: ut
       - run: ut prestart --workspaces
       - name: ut site
