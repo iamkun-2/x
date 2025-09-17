@@ -27,7 +27,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@ant-design/tools": "^19.0.2",
+    "@ant-design/tools": "^19",
     "@biomejs/biome": "^2.0.5",
     "@codecov/webpack-plugin": "^1.4.0",
     "@madccc/duplicate-package-checker-webpack-plugin": "^1.0.0",
@@ -40,7 +40,8 @@
     "marked-emoji": "^2.0.1",
     "prettier": "^3.3.3",
     "react-markdown": "^10.1.0",
-    "size-limit": "^11.1.5"
+    "size-limit": "^11.1.5",
+    "lodash": "^4.17.21"
   },
   "size-limit": [
     {
